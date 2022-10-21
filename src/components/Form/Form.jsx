@@ -17,6 +17,7 @@ export const Form = (props) => {
 
     alert(JSON.stringify(data));
     tg.sendData(JSON.stringify(data));
+    
   }, [country, street, subject]);
 
   useEffect(() => {

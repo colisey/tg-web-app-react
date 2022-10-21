@@ -14,7 +14,7 @@ const {user, onClose} = UseTelegram();
       <div className={styles.username}>
         <div>{user?.username}</div>
         <div>{user?.photo_url}</div>
-        <span>Версия 02</span>
+        <span>Версия 03</span>
         {/* <div>{JSON.stringify(tg.initDataUnsafe?.user)}</div> */}
       
         
