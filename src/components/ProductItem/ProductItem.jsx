@@ -14,7 +14,7 @@ export const ProductItem = ({product, className, onAdd}) => {
       <div className={styles.title}>{product.title}</div>
       <div className={styles.description}>{product.description}</div>
       <div className={styles.price}>
-        <span>Стоимость {product.title}</span>
+        <span>Стоимость <b>{product.price}</b>руб.</span>
       </div>
 
       <Button className={styles.addBtn} onClick={onAddHandler}>
