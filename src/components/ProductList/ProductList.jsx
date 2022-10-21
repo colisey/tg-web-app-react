@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { UseTelegram } from "../../hooks/useTelegram";
 import { ProductItem } from "../ProductItem/ProductItem";
+// import { ProductItem } from "../ProductItem/ProductItem";
 import styles from "./ProductList.module.css";
 
 const products = [
@@ -20,7 +21,7 @@ const getTotalPrice = (items = []) => {
   }, 0);
 };
 
-export const ProductList = (props) => {
+export const ProductList = () => {
   const tg = UseTelegram();
   const [addedItems, setAddedItems] = useState([]);
   const onAdd = (product) => {
@@ -45,10 +46,10 @@ export const ProductList = (props) => {
   };
 
   return (
-    <div className={styles.list} {...props}>
-      {products.map((item) => {
-        <ProductItem product={item} onAdd={onAdd} className={"item"} />;
-      })}
+    <div className={styles.list}>
+      {products.map((item) => (
+        <ProductItem product={item} onAdd={onAdd} className={"item"} />
+      ))}
     </div>
   );
 };
