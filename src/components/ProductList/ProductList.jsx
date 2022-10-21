@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { UseTelegram } from "../../hooks/useTelegram";
 import { ProductItem } from "../ProductItem/ProductItem";
 // import { ProductItem } from "../ProductItem/ProductItem";
@@ -17,7 +17,7 @@ const products = [
 
 const getTotalPrice = (items = []) => {
   return items.reduce((acc, item) => {
-    return acc += item.rpice;
+    return (acc += item.rpice);
   }, 0);
 };
 
@@ -26,7 +26,15 @@ export const ProductList = () => {
 
   const [addedItems, setAddedItems] = useState([]);
   // console.log('addedItems',addedItems)
-  tg.MainButton.show();
+  // tg.MainButton.show();
+  useEffect(() => {
+    tg.MainButton.show();
+  }, []);
+  // useEffect(() => {
+
+  //     tg.MainButton.show();
+
+  // });
 
   const onAdd = (product) => {
     // alert(product.price)
@@ -38,7 +46,6 @@ export const ProductList = () => {
     // console.log(alreadyAdded)
 
     if (alreadyAdded) {
-      
       newItems = addedItems.filter((i) => i.id !== product.id);
       // console.log('if newItems',newItems)
     } else {
@@ -51,7 +58,6 @@ export const ProductList = () => {
     // console.log('newItems.',newItems.length)
 
     // console.log('newItems.length',newItems.length)
-    
 
     // useEffect(() => {
     //   if (addedItems.length === 0) {
@@ -75,9 +81,9 @@ export const ProductList = () => {
 
   return (
     <div className={styles.list}>
-      {/* {products.map((item) => (
+      {products.map((item) => (
         <ProductItem product={item} onAdd={onAdd} className={"item"} />
-      ))} */}
+      ))}
     </div>
   );
 };
