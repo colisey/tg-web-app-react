@@ -1,4 +1,5 @@
 .wrapper {
+    padding: 10px 30px;
     background: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
     border: none;
