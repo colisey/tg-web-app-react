@@ -26,6 +26,7 @@ export const ProductList = () => {
 
   const [addedItems, setAddedItems] = useState([]);
   // console.log('addedItems',addedItems)
+  tg.MainButton.show();
 
   const onAdd = (product) => {
     // alert(product.price)
@@ -50,7 +51,7 @@ export const ProductList = () => {
     // console.log('newItems.',newItems.length)
 
     // console.log('newItems.length',newItems.length)
-    tg.MainButton.show();
+    
 
     // useEffect(() => {
     //   if (addedItems.length === 0) {
@@ -74,9 +75,9 @@ export const ProductList = () => {
 
   return (
     <div className={styles.list}>
-      {products.map((item) => (
+      {/* {products.map((item) => (
         <ProductItem product={item} onAdd={onAdd} className={"item"} />
-      ))}
+      ))} */}
     </div>
   );
 };
