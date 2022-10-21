@@ -14,6 +14,7 @@ export const Header = (props) => {
       <div className={styles.username}>
         <div>{tg.initDataUnsafe?.user?.username}</div>
         <div>{tg.initDataUnsafe?.user?.photo_url}</div>
+        <div>{JSON.stringify(tg.initDataUnsafe?.user)}</div>
       
         
       </div>
