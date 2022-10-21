@@ -1,21 +1,21 @@
 import { getTTFB } from "web-vitals";
+import { UseTelegram } from "../../hooks/useTelegram";
 import { Button } from "../Button/Button";
 import styles from "./Header.module.css";
 
 export const Header = (props) => {
-  const tg = window.Telegram.WebApp;
-  const onClose = () => {
-    tg.close();
-  };
+const {user, onClose} = UseTelegram();
+
+ 
 
   return (
     <div className={styles.wrapper} {...props}>
       <Button onClick={onClose}>Закрыть окно</Button>
       <div className={styles.username}>
-        <div>{tg.initDataUnsafe?.user?.username}</div>
-        <div>{tg.initDataUnsafe?.user?.photo_url}</div>
-        <span>Версия 01</span>
-        <div>{JSON.stringify(tg.initDataUnsafe?.user)}</div>
+        <div>{user?.username}</div>
+        <div>{user?.photo_url}</div>
+        <span>Версия 02</span>
+        {/* <div>{JSON.stringify(tg.initDataUnsafe?.user)}</div> */}
       
         
       </div>
