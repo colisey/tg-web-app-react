@@ -8,25 +8,24 @@ export const Form = (props) => {
   const [subject, setSubject] = useState("");
   const { tg } = UseTelegram();
 
-  const onSendData = useCallback(()=>{
+  const onSendData = useCallback(() => {
     const data = {
       country,
       street,
-      subject
-    }
+      subject,
+    };
 
     alert(JSON.stringify(data));
-    tg.sendData(JSON.stringify(data))
-  },[country, street, subject])
+    tg.sendData(JSON.stringify(data));
+  }, [country, street, subject]);
 
   useEffect(() => {
-    tg.onEvent('mainButtonClicked', onSendData)
-  
+    tg.onEvent("mainButtonClicked", onSendData);
+
     return () => {
-      tg.offEvent('mainButtonClicked', onSendData)
-    }
-  }, [])
-  
+      tg.offEvent("mainButtonClicked", onSendData);
+    };
+  }, []);
 
   useEffect(() => {
     tg.MainButton.setParams({
@@ -34,10 +33,10 @@ export const Form = (props) => {
     });
   }, []);
   useEffect(() => {
-    if(!country || !street){
-      tg.MainButton.hide()
+    if (!country || !street) {
+      tg.MainButton.hide();
     } else {
-      tg.MainButton.show()
+      tg.MainButton.show();
     }
   }, [country, street]);
 
