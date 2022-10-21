@@ -17,8 +17,8 @@ const products = [
 const getTotalPrice = (items = []) => {
   return items.reduce((acc, item) => {
     acc += item.price;
-  }, 0) 
-}
+  }, 0);
+};
 
 export const ProductList = (props) => {
   const tg = UseTelegram();
@@ -34,13 +34,13 @@ export const ProductList = (props) => {
     }
     setAddedItems(newItems);
 
-    if(newItems.length === 0){
-      tg.MainButton.hide()
+    if (newItems.length === 0) {
+      tg.MainButton.hide();
     } else {
-      tg.MainButton.show()
+      tg.MainButton.show();
       tg.MainButton.setParams({
-        text: `Купить за ${getTotalPrice(newItems)}`
-      })
+        text: `Купить за ${getTotalPrice(newItems)}`,
+      });
     }
   };
 
