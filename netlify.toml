@@ -1,4 +1,4 @@
-[[redirect]]
-form = '/*'
-to = 'index.js'
+[[redirects]]
+  from = "/*"
+  to = "index.js"
 status = 200
