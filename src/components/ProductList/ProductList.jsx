@@ -22,19 +22,17 @@ const getTotalPrice = (items = []) => {
 };
 
 export const ProductList = () => {
-  const tg = UseTelegram();
+  const { tg } = UseTelegram();
 
   const [addedItems, setAddedItems] = useState([]);
   // console.log('addedItems',addedItems)
   // tg.MainButton.show();
-  useEffect(() => {
-    tg.MainButton.show();
-  }, []);
+
   // useEffect(() => {
 
   //     tg.MainButton.show();
 
-  // });
+  // }, addedItems);
 
   const onAdd = (product) => {
     // alert(product.price)
@@ -68,15 +66,15 @@ export const ProductList = () => {
     //   }
     // }, [addedItems]);
 
-    // if (newItems.length === 0) {
-    //   tg.MainButton.hide();
-    // } else {
-    //   // console.log('newItems true')
-    //   tg.MainButton.show();
-    //   // tg.MainButton.setParams({
-    //   //   text: `Купить за ${getTotalPrice(newItems)}`,
-    //   // });
-    // }
+    if (newItems.length === 0) {
+      tg.MainButton.hide();
+    } else {
+      // console.log('newItems true')
+      tg.MainButton.show();
+      tg.MainButton.setParams({
+        text: `Купить за ${getTotalPrice(newItems)}`,
+      });
+    }
   };
 
   return (
