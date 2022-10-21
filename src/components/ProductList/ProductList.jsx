@@ -52,14 +52,14 @@ export const ProductList = () => {
     // console.log('newItems.length',newItems.length)
     tg.MainButton.show();
 
-    useEffect(() => {
-      if (addedItems.length === 0) {
-        // console.log('newItems.',newItems.length)
-        tg.MainButton.hide();
-      } else {
-        tg.MainButton.show();
-      }
-    }, [addedItems]);
+    // useEffect(() => {
+    //   if (addedItems.length === 0) {
+    //     // console.log('newItems.',newItems.length)
+    //     tg.MainButton.hide();
+    //   } else {
+    //     tg.MainButton.show();
+    //   }
+    // }, [addedItems]);
 
     // if (newItems.length === 0) {
     //   tg.MainButton.hide();
