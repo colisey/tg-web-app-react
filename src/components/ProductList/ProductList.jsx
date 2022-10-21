@@ -23,10 +23,16 @@ const getTotalPrice = (items = []) => {
 
 export const ProductList = () => {
   const tg = UseTelegram();
+  
   const [addedItems, setAddedItems] = useState([]);
   const onAdd = (product) => {
+    // alert(product.price)
+
     const alreadyAdded = addedItems.find((i) => i.id === product.id);
+
     let newItems = [];
+    // console.log('addedItems',addedItems);
+    // console.log('alreadyAdded',alreadyAdded);
 
     if (alreadyAdded) {
       newItems = addedItems.filter((i) => i.id !== product.id);
@@ -35,9 +41,13 @@ export const ProductList = () => {
     }
     setAddedItems(newItems);
 
+    console.log('newItems.',newItems.length)
+
+
     if (newItems.length === 0) {
       tg.MainButton.hide();
     } else {
+      console.log('newItems true')
       tg.MainButton.show();
       tg.MainButton.setParams({
         text: `Купить за ${getTotalPrice(newItems)}`,
