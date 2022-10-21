@@ -11,9 +11,12 @@ export const Header = (props) => {
   return (
     <div className={styles.wrapper} {...props}>
       <Button onClick={onClose}>Закрыть окно</Button>
-      <span className={styles.username}>
-        {tg.initDataUnsafe?.user?.username}
-      </span>
+      <div className={styles.username}>
+        <div>{tg.initDataUnsafe?.user?.username}</div>
+        <div>{tg.initDataUnsafe?.user?.photo_url}</div>
+      
+        
+      </div>
     </div>
   );
 };
