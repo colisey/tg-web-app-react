@@ -50,7 +50,7 @@ export const ProductList = () => {
     // console.log('newItems.',newItems.length)
 
     // console.log('newItems.length',newItems.length)
-    // tg.MainButton.show();
+    tg.MainButton.show();
 
     useEffect(() => {
       if (addedItems.length === 0) {
