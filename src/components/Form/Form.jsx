@@ -14,6 +14,7 @@ export const Form = (props) => {
       street,
       subject
     }
+    alert(country);
     tg.sendData(JSON.stringify(data))
   },[country, street, subject])
 
