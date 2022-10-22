@@ -5,6 +5,7 @@ import { ProductItem } from "../ProductItem/ProductItem";
 import styles from "./ProductList.module.css";
 
 import axios from "axios";
+import { TOKEN } from "../../api/wb.js";
 
 const products = [
   { id: 1, title: "Куртка", price: 750, description: "Рыжая красивая" },
@@ -30,39 +31,22 @@ export const ProductList = () => {
   const [appState, setAppState] = useState();
 
   useEffect(() => {
-
     axios
       .post("https://suppliers-api.wildberries.ru/content/v1/cards/filter", {
-        "id": 1,
-        "jsonrpc": "2.0",
-        "params": {
-          "filter": {
-            "filter": [
-              {
-                "column": "string",
-                "excludedValues": {}
-              }
-            ],
-            "find": [
-              {
-                "column": "string",
-                "search": {}
-              }
-            ],
-            "order": {
-              "column": "string",
-              "order": "string"
-            }
+        id: TOKEN,
+        jsonrpc: "2.0",
+        params: {
+          filter: {
+            order: {
+              column: "updatedAt",
+              order: "desc",
+            },
           },
-          "isArchive": true,
-          "query": {
-            "limit": 0,
-            "offset": 0,
-            "total": 0
+          query: {
+            limit: 1,
+            offset: 0,
           },
-          "supplierID": "NWY3ZGE5Y2MtYWM1YS00NjVmLWIxMTItODNmZTZjYWQ1ZWU5",
-          "withError": true
-        }
+        },
       })
       .then(function (response) {
         console.log(response);
