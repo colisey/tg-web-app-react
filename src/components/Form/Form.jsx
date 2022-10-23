@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { UseTelegram } from "../../hooks/useTelegram";
+import { UseTelegram } from "../../core/hooks/useTelegram";
 import styles from "./Form.module.css";
 
 export const Form = (props) => {
@@ -15,9 +15,7 @@ export const Form = (props) => {
       subject,
     };
 
-    alert(JSON.stringify(data));
     tg.sendData(JSON.stringify(data));
-    
   }, [country, street, subject]);
 
   useEffect(() => {
