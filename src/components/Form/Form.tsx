@@ -1,8 +1,10 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, FC } from "react";
+import { FormProps } from "./Form.props";
 import { UseTelegram } from "../../core/hooks/useTelegram";
 import styles from "./Form.module.css";
 
-export const Form = (props) => {
+
+export const Form: FC<FormProps> = (props) => {
   const [country, setCountry] = useState("");
   const [street, setStreet] = useState("");
   const [subject, setSubject] = useState("");
@@ -39,13 +41,13 @@ export const Form = (props) => {
     }
   }, [country, street]);
 
-  const onChangeCoutry = (e) => {
+  const onChangeCoutry = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCountry(e.target.value);
   };
-  const onChangeStreet = (e) => {
+  const onChangeStreet = (e: React.ChangeEvent<HTMLInputElement>) => {
     setStreet(e.target.value);
   };
-  const onChangeSubject = (e) => {
+  const onChangeSubject = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSubject(e.target.value);
   };
 
