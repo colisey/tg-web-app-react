@@ -2887,9 +2887,6 @@
     "uuid" "8.0.0"
     "xml2js" "0.4.19"
 
-<<<<<<< HEAD
->>>>>>> 2f7fc613affe07d3130ceacc7b14950582c6e079
-=======
 >>>>>>> 2f7fc613affe07d3130ceacc7b14950582c6e079
 =======
 >>>>>>> parent of c66035d... trtrt
@@ -5584,9 +5581,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
->>>>>>> 2f7fc613affe07d3130ceacc7b14950582c6e079
+>>>>>>> parent of 850d484... trtrt
+=======
 "is-typed-array@^1.1.3", "is-typed-array@^1.1.9":
   "integrity" "sha512-kfrlnTTn8pZkfpJMUgYD7YZ3qzeJgWUn8XfVYBARc4wnmNOmLbmuuaAs3q5fvB0UJOn6yHAKaGTPM7d6ezoD/A=="
   "resolved" "https://registry.npmjs.org/is-typed-array/-/is-typed-array-1.1.9.tgz"
@@ -5623,9 +5622,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> parent of 850d484... trtrt
 =======
->>>>>>> 2f7fc613affe07d3130ceacc7b14950582c6e079
 "isarray@^1.0.0":
   "integrity" "sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ=="
   "resolved" "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz"
