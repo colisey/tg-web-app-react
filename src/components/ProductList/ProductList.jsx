@@ -21,18 +21,9 @@ export const ProductList = () => { //: FC<ProductListProps>
   const [addedItems, setAddedItems] = useState([]); //<ProductsType>
   const [appState, setAppState] = useState();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   const onAdd = (product) => { //: itemType
-=======
-=======
->>>>>>> parent of d4f4174... i
-=======
->>>>>>> parent of d4f4174... i
-=======
->>>>>>> dev
+
   useEffect(() => {
     axios
       .post("https://suppliers-api.wildberries.ru/content/v1/cards/filter", {
@@ -70,7 +61,7 @@ export const ProductList = () => { //: FC<ProductListProps>
 
   const onAdd = (product) => {
     // alert(product.price)
->>>>>>> parent of d4f4174... i
+
 
     const alreadyAdded = addedItems.find((i) => i.id === product.id);
     let newItems = [];
@@ -90,30 +81,14 @@ export const ProductList = () => { //: FC<ProductListProps>
         text: `Купить за ${getTotalPrice(newItems)}`,
       });
     }
-  };
 
-  return (
-    <div className={styles.list}>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      ProductList
-=======
-      <button onClick={setAppState}>Загрузить</button>
->>>>>>> parent of d4f4174... i
-=======
-      <button onClick={setAppState}>Загрузить</button>
->>>>>>> parent of d4f4174... i
-=======
-      <button onClick={setAppState}>Загрузить</button>
->>>>>>> parent of d4f4174... i
-=======
-      <button onClick={setAppState}>Загрузить</button>
->>>>>>> dev
-      {products.map((item) => (
-        <ProductItem product={item} onAdd={onAdd} className={"item"} />
-      ))}
-    </div>
-  );
-};
+    return (
+      <div className={styles.list}>
+        <button onClick={setAppState}>Загрузить</button>
+
+        {products.map((item) => (
+          <ProductItem product={item} onAdd={onAdd} className={"item"} />
+        ))}
+      </div>
+    );
+  }}}
