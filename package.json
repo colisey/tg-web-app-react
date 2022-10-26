@@ -14,9 +14,12 @@
     "@types/react-dom": "^18.0.0",
     "@types/react-router-dom": "^5.3.3",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "aws-lambda": "^1.0.7",
 =======
 >>>>>>> parent of c66035d... trtrt
+=======
+>>>>>>> parent of 850d484... trtrt
 =======
 >>>>>>> parent of 850d484... trtrt
     "axios": "^1.1.3",
