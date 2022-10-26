@@ -23,3 +23,4 @@ export const ProductItem = ({product, className, onAdd}) => {
     </div>
   );
 };
+ // TODO
