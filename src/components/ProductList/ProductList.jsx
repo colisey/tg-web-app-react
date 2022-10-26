@@ -34,15 +34,6 @@ export const ProductList = () => { //: FC<ProductListProps>
   const [addedItems, setAddedItems] = useState([]); //<ProductsType>
   const [appState, setAppState] = useState();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  const onAdd = (product) => { //: itemType
-=======
-=======
->>>>>>> parent of d4f4174... i
-=======
->>>>>>> parent of d4f4174... i
   useEffect(() => {
     axios
       .post("https://suppliers-api.wildberries.ru/content/v1/cards/filter", {
@@ -104,19 +95,7 @@ export const ProductList = () => { //: FC<ProductListProps>
 
   return (
     <div className={styles.list}>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      ProductList
-=======
       <button onClick={setAppState}>Загрузить</button>
->>>>>>> parent of d4f4174... i
-=======
-      <button onClick={setAppState}>Загрузить</button>
->>>>>>> parent of d4f4174... i
-=======
-      <button onClick={setAppState}>Загрузить</button>
->>>>>>> parent of d4f4174... i
       {products.map((item) => (
         <ProductItem product={item} onAdd={onAdd} className={"item"} />
       ))}

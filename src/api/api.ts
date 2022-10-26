@@ -1,19 +1,17 @@
-<<<<<<< HEAD
-
-import axios from "axios";
-import { TOKEN } from "./wb";
+// import axios from "axios";
+// import { TOKEN } from "./wb";
 // import { TOKEN } from "";
 // import React, { useEffect, useState } from "react";
 
-const headers = {
-    "Content-Type": "application/json",
-    Authorization: TOKEN,
-  };
-export const API = axios.create({
-    baseURL: 'https://suppliers-api.wildberries.ru//cursor/list',
-    timeout: 1000,
-    headers
-  });
+// const headers = {
+//     "Content-Type": "application/json",
+//     Authorization: TOKEN,
+//   };
+// export const API = axios.create({
+//     baseURL: 'https://suppliers-api.wildberries.ru//cursor/list',
+//     timeout: 1000,
+//     headers
+//   });
 
 
 export const products = [
@@ -27,7 +25,3 @@ export const products = [
     { id: 8, title: "Куртка 7", price: 1600, description: "Рыжая красивая" },
   ];
 
-=======
-// import axios from "axios";
-// import React, { useEffect, useState } from "react";
->>>>>>> parent of d4f4174... i
