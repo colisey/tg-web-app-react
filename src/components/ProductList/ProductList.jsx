@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { UseTelegram } from "../../hooks/useTelegram";
+import { UseTelegram } from "../../core/hooks/useTelegram";
 import { ProductItem } from "../ProductItem/ProductItem";
 // import { ProductItem } from "../ProductItem/ProductItem";
 import styles from "./ProductList.module.css";
