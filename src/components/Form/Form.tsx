@@ -1,11 +1,5 @@
-<<<<<<< HEAD:src/components/Form/Form.tsx
-import { useCallback, useEffect, useState, FC } from "react";
-import { FormProps } from "./Form.props";
-import { UseTelegram } from "../../core/hooks/useTelegram";
-=======
 import { useCallback, useEffect, useState } from "react";
 import { UseTelegram } from "../../hooks/useTelegram";
->>>>>>> parent of e2b8698... ts:src/components/Form/Form.jsx
 import styles from "./Form.module.css";
 import { InputEventType, SelectElementType } from "../../core/types/types";
 
