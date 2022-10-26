@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { UseTelegram } from "../../hooks/useTelegram";
 import styles from "./Form.module.css";
- // TODO
+
 export const Form = (props) => {
   const [country, setCountry] = useState("");
   const [street, setStreet] = useState("");

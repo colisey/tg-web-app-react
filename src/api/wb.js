@@ -1,2 +1,1 @@
- // TODO console.log('ProductItem'); 
 export const TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NJRCI6IjRiZDIwMmEzLTk3NzItNGVlOS04NGE5LTJlYTgxOWY2YzhjMyJ9.-kQm9EtXvUMRV-Z4aHy2-K6H4pYPxDI-yEuBoa_icCM';
