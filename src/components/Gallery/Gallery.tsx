@@ -4,6 +4,6 @@ import styles from "./Gallery.module.css";
 
 export const Gallery: FC<GalleryProps> = (props) => {
   return (
-    <div className={styles.wrapper} {...props}>Ntrcn</div>
+    <div className={styles.wrapper} {...props}>Gallery</div>
   );
 };

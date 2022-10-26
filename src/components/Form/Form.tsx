@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState, FC } from "react";
 import { FormProps } from "./Form.props";
 import { UseTelegram } from "../../core/hooks/useTelegram";
 import styles from "./Form.module.css";
+import { InputEventType, SelectElementType } from "../../core/types/types";
 
 
 export const Form: FC<FormProps> = (props) => {
@@ -9,6 +10,8 @@ export const Form: FC<FormProps> = (props) => {
   const [street, setStreet] = useState("");
   const [subject, setSubject] = useState("");
   const { tg } = UseTelegram();
+
+  
 
   const onSendData = useCallback(() => {
     const data = {
@@ -41,19 +44,20 @@ export const Form: FC<FormProps> = (props) => {
     }
   }, [country, street]);
 
-  const onChangeCoutry = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const onChangeCoutry = (e: InputEventType) => {
     setCountry(e.target.value);
   };
-  const onChangeStreet = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const onChangeStreet = (e: InputEventType) => {
     setStreet(e.target.value);
   };
-  const onChangeSubject = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const onChangeSubject = (e: SelectElementType) => {
     setSubject(e.target.value);
   };
 
   return (
     <div className={styles.form} {...props}>
       <h3>Введите ваши данные</h3>
+      <span className={styles.error}>Естественно поля могут быть любые</span>
       <input
         onChange={onChangeCoutry}
         className={styles.input}
