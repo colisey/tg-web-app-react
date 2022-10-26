@@ -36,8 +36,11 @@ export const ProductList = () => { //: FC<ProductListProps>
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   const onAdd = (product) => { //: itemType
 =======
+=======
+>>>>>>> parent of d4f4174... i
 =======
 >>>>>>> parent of d4f4174... i
   useEffect(() => {
@@ -103,7 +106,11 @@ export const ProductList = () => { //: FC<ProductListProps>
     <div className={styles.list}>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       ProductList
+=======
+      <button onClick={setAppState}>Загрузить</button>
+>>>>>>> parent of d4f4174... i
 =======
       <button onClick={setAppState}>Загрузить</button>
 >>>>>>> parent of d4f4174... i
