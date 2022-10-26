@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import axios from "axios";
 import { TOKEN } from "./wb";
@@ -27,6 +28,10 @@ export const products = [
     { id: 8, title: "Куртка 7", price: 1600, description: "Рыжая красивая" },
   ];
 
+=======
+// import axios from "axios";
+// import React, { useEffect, useState } from "react";
+>>>>>>> parent of d4f4174... i
 =======
 // import axios from "axios";
 // import React, { useEffect, useState } from "react";

@@ -37,8 +37,11 @@ export const ProductList = () => { //: FC<ProductListProps>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   const onAdd = (product) => { //: itemType
 =======
+=======
+>>>>>>> parent of d4f4174... i
 =======
 >>>>>>> parent of d4f4174... i
 =======
@@ -107,7 +110,11 @@ export const ProductList = () => { //: FC<ProductListProps>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       ProductList
+=======
+      <button onClick={setAppState}>Загрузить</button>
+>>>>>>> parent of d4f4174... i
 =======
       <button onClick={setAppState}>Загрузить</button>
 >>>>>>> parent of d4f4174... i
