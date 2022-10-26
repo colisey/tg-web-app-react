@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import axios from "axios";
 import { TOKEN } from "./wb";
 // import { TOKEN } from "";
@@ -25,7 +25,4 @@ export const products = [
     { id: 7, title: "Куртка 6", price: 1200, description: "Рыжая красивая" },
     { id: 8, title: "Куртка 7", price: 1600, description: "Рыжая красивая" },
   ];
-=======
-// import axios from "axios";
-// import React, { useEffect, useState } from "react";
->>>>>>> parent of d4f4174... i
+

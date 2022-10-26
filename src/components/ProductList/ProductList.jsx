@@ -35,8 +35,11 @@ export const ProductList = () => { //: FC<ProductListProps>
   const [appState, setAppState] = useState();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   const onAdd = (product) => { //: itemType
 =======
+=======
+>>>>>>> parent of d4f4174... i
   useEffect(() => {
     axios
       .post("https://suppliers-api.wildberries.ru/content/v1/cards/filter", {
@@ -99,7 +102,11 @@ export const ProductList = () => { //: FC<ProductListProps>
   return (
     <div className={styles.list}>
 <<<<<<< HEAD
+<<<<<<< HEAD
       ProductList
+=======
+      <button onClick={setAppState}>Загрузить</button>
+>>>>>>> parent of d4f4174... i
 =======
       <button onClick={setAppState}>Загрузить</button>
 >>>>>>> parent of d4f4174... i
