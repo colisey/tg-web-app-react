@@ -1,5 +1,6 @@
 .wrapper {
     display: flex;
     overflow: auto;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
 }

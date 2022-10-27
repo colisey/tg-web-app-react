@@ -1,8 +1,10 @@
 .wrapper {
     display: flex;
     margin: 10px;
-    width: 90%;
     flex-direction: column;
+    /* width: 300px; */
+    min-width: 330px;
+    text-align: left;
 }
 .mail {
   overflow: hidden;
@@ -12,15 +14,28 @@
 }
 .p {
   margin: 5px 0 10px;
+  font-size: 1.1em;
 }
 .ul{
     display: block;
     text-align: left;
+    list-style: none;
 }
 .li{
-    display: inline-block;
-    margin: 3px 5px;
+    /* display: inline-block; */
+    margin: 3px 5px 10px;
 }
 .a {
     color: black;
+    font-size: 1.1em;
+    text-decoration: none;
+
+    
+
+}
+.a > span {
+    font-weight: 700;
+}
+.img{
+    width: 100%;
 }
