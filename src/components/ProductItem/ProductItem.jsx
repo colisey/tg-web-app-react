@@ -7,10 +7,14 @@ export const ProductItem = ({product, className, onAdd}) => {
   const onAddHandler = () => {
     onAdd(product)
   }
-  // console.log('ProductItem');
+  const btnText = product.isActive? 'Удалить из корзины':'Добавить в корзину';
+
+  // console.log('ProductItem',product);
   return (
     <div className={styles.wrapper}>
-      <div className={styles.img} />
+      <div className={styles.img}>
+        <img src={product.img} alt={product.title} />
+      </div>
       <div className={styles.title}>{product.title}</div>
       <div className={styles.description}>{product.description}</div>
       <div className={styles.price}>
@@ -18,7 +22,7 @@ export const ProductItem = ({product, className, onAdd}) => {
       </div>
 
       <Button className={styles.addBtn} onClick={onAddHandler}>
-        Добавить в корзину
+        {btnText}
       </Button>
     </div>
   );
